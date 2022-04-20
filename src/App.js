@@ -5,14 +5,16 @@ import './styles/main_styles.css';
 
 import ParallaxJSXWrapper from './components/ParallaxJSXWrapper.js';
 import MyButton from './components/MyButton.js';
+import rocket_picture from "./images/rocket.png";
 
 function App() {
 	const Space = ParallaxJSXWrapper(<img src="./images/space.png" alt="" className="space" />, 0.02);
 	const Earth = ParallaxJSXWrapper(<img src="./images/earth.png" alt="" className="earth" />, 0.07);
 	const Planet = ParallaxJSXWrapper(<img src="./images/planet1.png" alt="" className="planet" />, 0.03);
-	const Rocket = ParallaxJSXWrapper(<img src="./images/rocket.png" alt="" className="rocket" />, 0.04);
+	const Rocket_old = ParallaxJSXWrapper(<img src="./images/rocket.png" alt="" className="rocket" />, 0.04);
+	const Rocket = ParallaxJSXWrapper(<img src={rocket_picture} alt="" className="rocket" />, 0.04);
 	const Satellite = ParallaxJSXWrapper(<img src="./images/satellite.png" alt="" className="satellite" />, 0.03);
-	const Greeting = ParallaxJSXWrapper(<div className="greeting">[Welcome]</div>, 0.04);
+	const Greeting = ParallaxJSXWrapper(<div className="greeting">Bible tour</div>, 0.04);
 	const Section2 = ParallaxJSXWrapper(
 		<div className="section2">
 			<svg className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 100 100" preserveAspectRatio="none" >
@@ -67,13 +69,13 @@ function App() {
 	return (
 		<div className="main_container">
 			<div className="section1">
-				{/* <img src="./images/space.png" alt="" className="space"/> */}
+				<img src="./images/space.png" alt="" className="space"/>
 				<Space />
 				{/* <img src="./images/earth.png" alt="" className="earth"/> */}
 				<Earth />
 				{/* <img src="./images/planet1.png" alt="" className="planet"/> */}
 				<Planet />
-				{/* <img src="./images/rocket.png" alt="" className="rocket"/> */}
+				<img src="./images/rocket.png" alt="" className="rocket"/>
 				<Rocket />
 				{/* <img src="./images/satellite.png" alt="" className="satellite"/> */}
 				<Satellite />
