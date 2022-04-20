@@ -5,7 +5,6 @@ import './styles/main_styles.css';
 
 import ParallaxJSXWrapper from './components/ParallaxJSXWrapper.js';
 import MyButton from './components/MyButton.js';
-import rocket_picture from "./images/rocket.png";
 
 function importAll(r) {
 	let images = {};
@@ -85,54 +84,8 @@ function App() {
 			</div>
 
 			<Section2 />
-			{/* <div className="section2">
-				<svg className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 100 100" preserveAspectRatio="none" >
-					<path d="M0,100 C65,93 76,10 100,100" />
-				</svg>
-
-				<div className="section2_container">
-					<div className="left_side">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum, nostrum veniam soluta optio a reiciendis labore consequatur nesciunt ipsam.</p>
-					</div>
-					<div className="right_side">
-						<img src="https://picsum.photos/1200/1200" alt="" className="image" />
-					</div>
-				</div>
-
-				<svg className="svg_curve_bottom" xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 100 100" preserveAspectRatio="none" >
-					<path d="M0,0 C65,20 90,5 100,0" />
-				</svg>
-			</div> */}
 
 			<Section3 />
-			{/* <div className="section3">
-				Sign up for our newsletter!
-				<input type="text" name="email" id="email" className="input_email" />
-				<MyButton name="Sign Up" />
-
-				<div className="contacts">
-					<div className="contact_section">
-						<ul>
-							<li>Affiliates</li>
-							<li>Careers</li>
-							<li>Privacy</li>
-						</ul>
-					</div>
-					<div className="contact_section">
-						<ul>
-							<li>Telephone <i className="fas fa-phone-square-alt"></i></li>
-							<li>Email <i className="fas fa-envelope-square"></i></li>
-						</ul>
-					</div>
-					<div className="contact_section">
-						<ul>
-							<li>Instagram <i className="fab fa-instagram-square"></i></li>
-							<li>Twitter <i className="fab fa-twitter-square"></i></li>
-							<li>Facebook <i className="fab fa-facebook-square"></i></li>
-						</ul>
-					</div>
-				</div>
-			</div> */}
 		</div>
 	);
 }
