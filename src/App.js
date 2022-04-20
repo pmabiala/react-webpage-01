@@ -12,7 +12,8 @@ function App() {
 	const Earth = ParallaxJSXWrapper(<img src="./images/earth.png" alt="" className="earth" />, 0.07);
 	const Planet = ParallaxJSXWrapper(<img src="./images/planet1.png" alt="" className="planet" />, 0.03);
 	const Rocket_old = ParallaxJSXWrapper(<img src="./images/rocket.png" alt="" className="rocket" />, 0.04);
-	const Rocket = ParallaxJSXWrapper(<img src={rocket_picture} alt="" className="rocket" />, 0.04);
+	const Rocket_ok = ParallaxJSXWrapper(<img src={rocket_picture} alt="" className="rocket" />, 0.04);
+	const Rocket = ParallaxJSXWrapper(<img src={"./images/rocket.png"} alt="" className="rocket" />, 0.04);
 	const Satellite = ParallaxJSXWrapper(<img src="./images/satellite.png" alt="" className="satellite" />, 0.03);
 	const Greeting = ParallaxJSXWrapper(<div className="greeting">Bible tour</div>, 0.04);
 	const Section2 = ParallaxJSXWrapper(
